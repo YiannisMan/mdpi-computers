@@ -1,0 +1,4 @@
+score,AUROC,CI
+Gate (reranker logit),0.663,"[0.593, 0.724]"
+B1 answerability clf,0.717,"[0.647, 0.777]"
+B2 CRAG (monoT5),0.642,"[0.576, 0.703]"

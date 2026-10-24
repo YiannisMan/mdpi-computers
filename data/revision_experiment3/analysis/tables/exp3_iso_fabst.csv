@@ -1,0 +1,4 @@
+method,T_star,F_abst,C_abst,C_abst_CI,QLoRA_C_abst,QLoRA_minus_method_pp
+Gate (reranker logit),-1.4382,21.0,31.2,"[16.7, 57.2]",42.4,11.2
+B1 answerability clf,0.3574,21.0,45.4,"[15.8, 67.7]",42.4,-2.9
+B2 CRAG (monoT5),-0.0351,9.5,22.9,"[17.6, 43.7]",42.4,19.5

@@ -1,0 +1,7 @@
+A,B,population,metric,delta_pp,boot_lo,boot_hi,mcnemar_p,b01,b10,holm_p,verdict
+Gate,Base,missing,C-Abst,45.2,38.37,52.03,2.0194839173657902e-28,93,0,6.058451752097371e-28,significantly higher
+QLoRA,Base,missing,C-Abst,33.98,26.99,40.98,9.9631125455154e-18,74,4,1.99262250910308e-17,significantly higher
+QLoRA,Gate,missing,C-Abst,-11.22,-19.35,-2.76,0.012812402175831366,28,51,0.012812402175831366,significantly lower
+Gate,Base,present,F-Abst,23.81,16.19,32.38,5.960464477539063e-08,25,0,1.7881393432617188e-07,significantly higher
+QLoRA,Base,present,F-Abst,15.24,6.35,24.13,0.002493917942047119,21,5,0.004987835884094238,significantly higher
+QLoRA,Gate,present,F-Abst,-8.57,-18.73,1.9,0.14961278438568115,11,20,0.14961278438568115,no detectable difference
