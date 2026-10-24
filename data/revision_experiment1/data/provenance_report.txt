@@ -1,0 +1,15 @@
+PROVENANCE REPORT (Πείραμα 1Α)
+============================================================
+TRAIN n=600 (ans 450/unans 150)
+TEST  n=310 (ans 160/unans 150)
+
+shared gold docs TRAIN<->TEST : 40 (φυσικό στο TechQA, ΔΕΝ αφαιρούνται, δηλώνονται στο κείμενο)
+duplicate questions TRAIN<->TEST: 22
+
+ΚΑΝΟΝΕΣ ΑΠΟΦΑΣΗΣ:
+  reranker_train ∩ TEST        =  158  -> ≠0 → το 1Β είναι ΥΠΟΧΡΕΩΤΙΚΟ (αναμενόμενο, pair-level split σε train+dev)
+  reranker_train ∩ reranker_val =  249  -> ≠0 → το 90/10 split(2736/304) έγινε ανά ζεύγος (pair-level), όχι ανά ερώτηση
+  SFT ∩ TEST                   =    0  -> =0 → ο QLoRA adapter επαναχρησιμοποιείται αυτούσιος
+  stageC_unans ∩ SFT           =    0  -> =0 αν δεν επικαλύπτονται, αλλιώς δηλώνεται (το νέο Stage C τρέχει στο TEST)
+
+ΠΡΟΣΟΧΗ: στο νέο άρθρο η στήλη intersection_with_TEST στο provenance.csv ΠΡΕΠΕΙ να είναι 0 σε κάθε γραμμή που μπαίνει στην αξιολόγηση (reranker_train είναι η μόνη αναμενόμενη εξαίρεση, γι' αυτό γίνεται το 1Β).

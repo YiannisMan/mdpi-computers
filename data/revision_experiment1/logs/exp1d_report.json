@@ -1,0 +1,286 @@
+{
+  "experiment": "1D_StageB",
+  "generated_utc": "2026-10-20T05:13:15Z",
+  "test_set": {
+    "n_total": 310,
+    "present": 105,
+    "missA": 55,
+    "missU": 150
+  },
+  "integrity": {
+    "per_config_run": [
+      {
+        "config": "Base",
+        "run": 1,
+        "lines": 310,
+        "unique_qids": 310,
+        "duplicates": 0,
+        "ids_match_frozen": "OK",
+        "invalid": 4,
+        "invalid_pct": 1.29,
+        "truncated": 0,
+        "truncated_pct": 0.0,
+        "pass": true
+      },
+      {
+        "config": "Base",
+        "run": 2,
+        "lines": 310,
+        "unique_qids": 310,
+        "duplicates": 0,
+        "ids_match_frozen": "OK",
+        "invalid": 4,
+        "invalid_pct": 1.29,
+        "truncated": 0,
+        "truncated_pct": 0.0,
+        "pass": true
+      },
+      {
+        "config": "Base",
+        "run": 3,
+        "lines": 310,
+        "unique_qids": 310,
+        "duplicates": 0,
+        "ids_match_frozen": "OK",
+        "invalid": 4,
+        "invalid_pct": 1.29,
+        "truncated": 0,
+        "truncated_pct": 0.0,
+        "pass": true
+      },
+      {
+        "config": "QLoRA",
+        "run": 1,
+        "lines": 310,
+        "unique_qids": 310,
+        "duplicates": 0,
+        "ids_match_frozen": "OK",
+        "invalid": 0,
+        "invalid_pct": 0.0,
+        "truncated": 0,
+        "truncated_pct": 0.0,
+        "pass": true
+      },
+      {
+        "config": "QLoRA",
+        "run": 2,
+        "lines": 310,
+        "unique_qids": 310,
+        "duplicates": 0,
+        "ids_match_frozen": "OK",
+        "invalid": 0,
+        "invalid_pct": 0.0,
+        "truncated": 0,
+        "truncated_pct": 0.0,
+        "pass": true
+      },
+      {
+        "config": "QLoRA",
+        "run": 3,
+        "lines": 310,
+        "unique_qids": 310,
+        "duplicates": 0,
+        "ids_match_frozen": "OK",
+        "invalid": 0,
+        "invalid_pct": 0.0,
+        "truncated": 0,
+        "truncated_pct": 0.0,
+        "pass": true
+      }
+    ],
+    "prompt_template": {
+      "computed": "dae4ab312b4a891357b848544f1ba4a38aa78e6ebccfb78fe30d651f4412ca5d",
+      "env_json": "dae4ab312b4a891357b848544f1ba4a38aa78e6ebccfb78fe30d651f4412ca5d",
+      "match": true
+    },
+    "all_pass": true
+  },
+  "stageB_per_run": [
+    {
+      "config": "Base",
+      "run": 1,
+      "C_Abst_missing": 8.292682926829269,
+      "n_missing": 205,
+      "C_Abst_missA": 7.2727272727272725,
+      "n_missA": 55,
+      "C_Abst_missU": 8.666666666666666,
+      "n_missU": 150,
+      "F_Abst_present": 5.714285714285714,
+      "n_present": 105,
+      "Hazard_missing": 91.70731707317073
+    },
+    {
+      "config": "Base",
+      "run": 2,
+      "C_Abst_missing": 8.78048780487805,
+      "n_missing": 205,
+      "C_Abst_missA": 9.090909090909092,
+      "n_missA": 55,
+      "C_Abst_missU": 8.666666666666666,
+      "n_missU": 150,
+      "F_Abst_present": 5.714285714285714,
+      "n_present": 105,
+      "Hazard_missing": 91.21951219512195
+    },
+    {
+      "config": "Base",
+      "run": 3,
+      "C_Abst_missing": 8.292682926829269,
+      "n_missing": 205,
+      "C_Abst_missA": 7.2727272727272725,
+      "n_missA": 55,
+      "C_Abst_missU": 8.666666666666666,
+      "n_missU": 150,
+      "F_Abst_present": 5.714285714285714,
+      "n_present": 105,
+      "Hazard_missing": 91.70731707317073
+    },
+    {
+      "config": "QLoRA",
+      "run": 1,
+      "C_Abst_missing": 42.4390243902439,
+      "n_missing": 205,
+      "C_Abst_missA": 38.18181818181818,
+      "n_missA": 55,
+      "C_Abst_missU": 44.0,
+      "n_missU": 150,
+      "F_Abst_present": 20.952380952380953,
+      "n_present": 105,
+      "Hazard_missing": 57.5609756097561
+    },
+    {
+      "config": "QLoRA",
+      "run": 2,
+      "C_Abst_missing": 42.926829268292686,
+      "n_missing": 205,
+      "C_Abst_missA": 40.0,
+      "n_missA": 55,
+      "C_Abst_missU": 44.0,
+      "n_missU": 150,
+      "F_Abst_present": 20.952380952380953,
+      "n_present": 105,
+      "Hazard_missing": 57.073170731707314
+    },
+    {
+      "config": "QLoRA",
+      "run": 3,
+      "C_Abst_missing": 41.951219512195124,
+      "n_missing": 205,
+      "C_Abst_missA": 38.18181818181818,
+      "n_missA": 55,
+      "C_Abst_missU": 43.333333333333336,
+      "n_missU": 150,
+      "F_Abst_present": 20.952380952380953,
+      "n_present": 105,
+      "Hazard_missing": 58.048780487804876
+    }
+  ],
+  "stageB_summary": [
+    {
+      "config": "Base",
+      "n_runs": 3,
+      "C_Abst_missing": "8.5 (8.3-8.8)",
+      "C_Abst_missA": "7.9 (7.3-9.1)",
+      "C_Abst_missU": "8.7 (8.7-8.7)",
+      "F_Abst_present": "5.7 (5.7-5.7)",
+      "Hazard_missing": "91.5 (91.2-91.7)",
+      "citation_valid_present_answered_pct": 88.2,
+      "n_present_answered": 297,
+      "invalid_pct_pooled": 1.29,
+      "truncated_pct_pooled": 0.0
+    },
+    {
+      "config": "QLoRA",
+      "n_runs": 3,
+      "C_Abst_missing": "42.4 (42.0-42.9)",
+      "C_Abst_missA": "38.8 (38.2-40.0)",
+      "C_Abst_missU": "43.8 (43.3-44.0)",
+      "F_Abst_present": "21.0 (21.0-21.0)",
+      "Hazard_missing": "57.6 (57.1-58.0)",
+      "citation_valid_present_answered_pct": 88.0,
+      "n_present_answered": 249,
+      "invalid_pct_pooled": 0.0,
+      "truncated_pct_pooled": 0.0
+    }
+  ],
+  "wilson_majority": [
+    {
+      "config": "Base",
+      "population": "missing",
+      "k": 17,
+      "n": 205,
+      "pct": 8.292682926829269,
+      "ci_lo": 5.241831724901759,
+      "ci_hi": 12.877874503153187
+    },
+    {
+      "config": "Base",
+      "population": "missA",
+      "k": 4,
+      "n": 55,
+      "pct": 7.2727272727272725,
+      "ci_lo": 2.864406023304053,
+      "ci_hi": 17.259940072156052
+    },
+    {
+      "config": "Base",
+      "population": "missU",
+      "k": 13,
+      "n": 150,
+      "pct": 8.666666666666668,
+      "ci_lo": 5.134717827472417,
+      "ci_hi": 14.262822373621914
+    },
+    {
+      "config": "Base",
+      "population": "present",
+      "k": 6,
+      "n": 105,
+      "pct": 5.714285714285714,
+      "ci_lo": 2.6449634437321694,
+      "ci_hi": 11.909654798560423
+    },
+    {
+      "config": "QLoRA",
+      "population": "missing",
+      "k": 87,
+      "n": 205,
+      "pct": 42.4390243902439,
+      "ci_lo": 35.873392677754055,
+      "ci_hi": 49.28281137528513
+    },
+    {
+      "config": "QLoRA",
+      "population": "missA",
+      "k": 21,
+      "n": 55,
+      "pct": 38.18181818181819,
+      "ci_lo": 26.5159542588938,
+      "ci_hi": 51.390779767510075
+    },
+    {
+      "config": "QLoRA",
+      "population": "missU",
+      "k": 66,
+      "n": 150,
+      "pct": 44.0,
+      "ci_lo": 36.30449619604422,
+      "ci_hi": 51.995146736372696
+    },
+    {
+      "config": "QLoRA",
+      "population": "present",
+      "k": 22,
+      "n": 105,
+      "pct": 20.952380952380953,
+      "ci_lo": 14.263552777934821,
+      "ci_hi": 29.69162692937537
+    }
+  ],
+  "env_sha256": {
+    "gguf": "b118f9e3590f1e77b2a129f453078996ae470cc7d5f7c5682b10a71637dd3c29",
+    "adapter_dir": "c0e62247e225762825233f755ec0a5280a41d10010b3a2ff10772f64d0628feb",
+    "prompts_file": "9ea1cb4bf060d0ebb2b188ef9a5b4d5bcc72f00cba799134c0ab9e7025537830",
+    "prompt_template": "dae4ab312b4a891357b848544f1ba4a38aa78e6ebccfb78fe30d651f4412ca5d"
+  }
+}

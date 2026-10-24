@@ -1,0 +1,50 @@
+{
+  "criterion": "max C-Abst s.t. F-Abst <= 25.0% (TRAIN out-of-fold)",
+  "n_present": 255,
+  "n_missing": 345,
+  "gate": {
+    "T_dep": -0.5645286083221435,
+    "C_abst_train": 58.26,
+    "F_abst_train": 24.71,
+    "auroc": 0.7324,
+    "auroc_ci": [
+      0.6897,
+      0.772
+    ],
+    "T5_on_train_curve": {
+      "C_abst": 99.71,
+      "F_abst": 93.33
+    }
+  },
+  "B1_clf": {
+    "p_star": 0.41833897786218693,
+    "C": 3.0,
+    "C_abst_train": 63.77,
+    "F_abst_train": 24.31,
+    "auroc_oof": 0.7501,
+    "auroc_ci": [
+      0.708,
+      0.7889
+    ],
+    "features": [
+      "max_logit",
+      "logit2",
+      "mean_logit",
+      "gap12",
+      "softmax_entropy",
+      "q_len",
+      "n_tech_tokens"
+    ]
+  },
+  "B2_crag": {
+    "theta_lo": -0.0068207294680178165,
+    "theta_hi": -0.0006989181856624782,
+    "C_abst_train": 54.78,
+    "F_abst_train": 24.31,
+    "auroc": 0.711,
+    "auroc_ci": [
+      0.672,
+      0.7494
+    ]
+  }
+}

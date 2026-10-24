@@ -1,0 +1,5 @@
+subgroup,escalated_pct_majority,ci_lo,ci_hi,k,n
+present,21.0,14.3,29.7,22,105
+missA,38.2,26.5,51.4,21,55
+missU,45.3,37.6,53.3,68,150
+missing,43.4,36.8,50.3,89,205

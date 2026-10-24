@@ -1,0 +1,333 @@
+{
+  "experiment": "2_Stats",
+  "T_dep": -0.5645286083221436,
+  "T5": 5.0,
+  "n_bootstrap": 10000,
+  "test_set": {
+    "present": 105,
+    "missA": 55,
+    "missU": 150
+  },
+  "table4": [
+    {
+      "config": "Base",
+      "C_Abst_missing": "8.5 (8.3-8.8)",
+      "C_Abst_missA": "7.9 (7.3-9.1)",
+      "C_Abst_missU": "8.7 (8.7-8.7)",
+      "Hazard_missing": "91.5 (91.2-91.7)",
+      "F_Abst_present": "5.7 (5.7-5.7)",
+      "citation_valid": "88.2 (87.9-88.9)",
+      "rouge_l": "20.2 (20.1-20.3)",
+      "n_ans_present": 99
+    },
+    {
+      "config": "Gate",
+      "C_Abst_missing": "53.7 (53.7-53.7)",
+      "C_Abst_missA": "56.4 (56.4-56.4)",
+      "C_Abst_missU": "52.7 (52.7-52.7)",
+      "Hazard_missing": "46.3 (46.3-46.3)",
+      "F_Abst_present": "29.5 (29.5-29.5)",
+      "citation_valid": "85.6 (85.1-86.5)",
+      "rouge_l": "21.0 (20.8-21.2)",
+      "n_ans_present": 74
+    },
+    {
+      "config": "Gate_T5",
+      "C_Abst_missing": "99.5 (99.5-99.5)",
+      "C_Abst_missA": "100.0 (100.0-100.0)",
+      "C_Abst_missU": "99.3 (99.3-99.3)",
+      "Hazard_missing": "0.5 (0.5-0.5)",
+      "F_Abst_present": "96.2 (96.2-96.2)",
+      "citation_valid": "100.0 (100.0-100.0)",
+      "rouge_l": "17.8 (17.8-17.8)",
+      "n_ans_present": 4
+    },
+    {
+      "config": "QLoRA",
+      "C_Abst_missing": "42.4 (42.0-42.9)",
+      "C_Abst_missA": "38.8 (38.2-40.0)",
+      "C_Abst_missU": "43.8 (43.3-44.0)",
+      "Hazard_missing": "57.6 (57.1-58.0)",
+      "F_Abst_present": "21.0 (21.0-21.0)",
+      "citation_valid": "88.0 (88.0-88.0)",
+      "rouge_l": "29.8 (29.5-29.9)",
+      "n_ans_present": 83
+    }
+  ],
+  "wilson_majority": [
+    {
+      "config": "Base",
+      "population": "missing",
+      "k": 17,
+      "n": 205,
+      "pct": 8.292682926829269,
+      "ci_lo": 5.241831724901759,
+      "ci_hi": 12.877874503153187
+    },
+    {
+      "config": "Base",
+      "population": "missA",
+      "k": 4,
+      "n": 55,
+      "pct": 7.2727272727272725,
+      "ci_lo": 2.864406023304053,
+      "ci_hi": 17.259940072156052
+    },
+    {
+      "config": "Base",
+      "population": "missU",
+      "k": 13,
+      "n": 150,
+      "pct": 8.666666666666668,
+      "ci_lo": 5.134717827472417,
+      "ci_hi": 14.262822373621914
+    },
+    {
+      "config": "Base",
+      "population": "present",
+      "k": 6,
+      "n": 105,
+      "pct": 5.714285714285714,
+      "ci_lo": 2.6449634437321694,
+      "ci_hi": 11.909654798560423
+    },
+    {
+      "config": "Gate",
+      "population": "missing",
+      "k": 110,
+      "n": 205,
+      "pct": 53.65853658536586,
+      "ci_lo": 46.827834072718396,
+      "ci_hi": 60.354647837101346
+    },
+    {
+      "config": "Gate",
+      "population": "missA",
+      "k": 31,
+      "n": 55,
+      "pct": 56.36363636363636,
+      "ci_lo": 43.269816346414444,
+      "ci_hi": 68.62655763936809
+    },
+    {
+      "config": "Gate",
+      "population": "missU",
+      "k": 79,
+      "n": 150,
+      "pct": 52.666666666666664,
+      "ci_lo": 44.71005535542383,
+      "ci_hi": 60.490103341279756
+    },
+    {
+      "config": "Gate",
+      "population": "present",
+      "k": 31,
+      "n": 105,
+      "pct": 29.523809523809526,
+      "ci_lo": 21.646522851654954,
+      "ci_hi": 38.84647267972765
+    },
+    {
+      "config": "Gate_T5",
+      "population": "missing",
+      "k": 204,
+      "n": 205,
+      "pct": 99.51219512195122,
+      "ci_lo": 97.28908334706905,
+      "ci_hi": 99.91383849915809
+    },
+    {
+      "config": "Gate_T5",
+      "population": "missA",
+      "k": 55,
+      "n": 55,
+      "pct": 100.0,
+      "ci_lo": 93.47150988829137,
+      "ci_hi": 100.0
+    },
+    {
+      "config": "Gate_T5",
+      "population": "missU",
+      "k": 149,
+      "n": 150,
+      "pct": 99.33333333333333,
+      "ci_lo": 96.32071602251817,
+      "ci_hi": 99.88221986649826
+    },
+    {
+      "config": "Gate_T5",
+      "population": "present",
+      "k": 101,
+      "n": 105,
+      "pct": 96.19047619047619,
+      "ci_lo": 90.61169787394539,
+      "ci_hi": 98.50875406688924
+    },
+    {
+      "config": "QLoRA",
+      "population": "missing",
+      "k": 87,
+      "n": 205,
+      "pct": 42.4390243902439,
+      "ci_lo": 35.873392677754055,
+      "ci_hi": 49.28281137528513
+    },
+    {
+      "config": "QLoRA",
+      "population": "missA",
+      "k": 21,
+      "n": 55,
+      "pct": 38.18181818181819,
+      "ci_lo": 26.5159542588938,
+      "ci_hi": 51.390779767510075
+    },
+    {
+      "config": "QLoRA",
+      "population": "missU",
+      "k": 66,
+      "n": 150,
+      "pct": 44.0,
+      "ci_lo": 36.30449619604422,
+      "ci_hi": 51.995146736372696
+    },
+    {
+      "config": "QLoRA",
+      "population": "present",
+      "k": 22,
+      "n": 105,
+      "pct": 20.952380952380953,
+      "ci_lo": 14.263552777934821,
+      "ci_hi": 29.69162692937537
+    }
+  ],
+  "pairwise_main": [
+    {
+      "A": "Gate",
+      "B": "Base",
+      "population": "missing",
+      "metric": "C-Abst",
+      "delta_pp": 45.2,
+      "boot_lo": 38.37,
+      "boot_hi": 52.03,
+      "mcnemar_p": 2.0194839173657902e-28,
+      "b01": 93,
+      "b10": 0,
+      "holm_p": 6.058451752097371e-28,
+      "verdict": "significantly higher"
+    },
+    {
+      "A": "QLoRA",
+      "B": "Base",
+      "population": "missing",
+      "metric": "C-Abst",
+      "delta_pp": 33.98,
+      "boot_lo": 26.99,
+      "boot_hi": 40.98,
+      "mcnemar_p": 9.9631125455154e-18,
+      "b01": 74,
+      "b10": 4,
+      "holm_p": 1.99262250910308e-17,
+      "verdict": "significantly higher"
+    },
+    {
+      "A": "QLoRA",
+      "B": "Gate",
+      "population": "missing",
+      "metric": "C-Abst",
+      "delta_pp": -11.22,
+      "boot_lo": -19.35,
+      "boot_hi": -2.76,
+      "mcnemar_p": 0.012812402175831366,
+      "b01": 28,
+      "b10": 51,
+      "holm_p": 0.012812402175831366,
+      "verdict": "significantly lower"
+    },
+    {
+      "A": "Gate",
+      "B": "Base",
+      "population": "present",
+      "metric": "F-Abst",
+      "delta_pp": 23.81,
+      "boot_lo": 16.19,
+      "boot_hi": 32.38,
+      "mcnemar_p": 5.960464477539063e-08,
+      "b01": 25,
+      "b10": 0,
+      "holm_p": 1.7881393432617188e-07,
+      "verdict": "significantly higher"
+    },
+    {
+      "A": "QLoRA",
+      "B": "Base",
+      "population": "present",
+      "metric": "F-Abst",
+      "delta_pp": 15.24,
+      "boot_lo": 6.35,
+      "boot_hi": 24.13,
+      "mcnemar_p": 0.002493917942047119,
+      "b01": 21,
+      "b10": 5,
+      "holm_p": 0.004987835884094238,
+      "verdict": "significantly higher"
+    },
+    {
+      "A": "QLoRA",
+      "B": "Gate",
+      "population": "present",
+      "metric": "F-Abst",
+      "delta_pp": -8.57,
+      "boot_lo": -18.73,
+      "boot_hi": 1.9,
+      "mcnemar_p": 0.14961278438568115,
+      "b01": 11,
+      "b10": 20,
+      "holm_p": 0.14961278438568115,
+      "verdict": "no detectable difference"
+    }
+  ],
+  "pairwise_sensitivity": [
+    {
+      "population": "missing",
+      "A": "Gate",
+      "B": "Base",
+      "p_min": 0.0,
+      "p_max": 0.0
+    },
+    {
+      "population": "missing",
+      "A": "QLoRA",
+      "B": "Base",
+      "p_min": 0.0,
+      "p_max": 0.0
+    },
+    {
+      "population": "missing",
+      "A": "QLoRA",
+      "B": "Gate",
+      "p_min": 0.0088,
+      "p_max": 0.0169
+    },
+    {
+      "population": "present",
+      "A": "Gate",
+      "B": "Base",
+      "p_min": 0.0,
+      "p_max": 0.0
+    },
+    {
+      "population": "present",
+      "A": "QLoRA",
+      "B": "Base",
+      "p_min": 0.0025,
+      "p_max": 0.0025
+    },
+    {
+      "population": "present",
+      "A": "QLoRA",
+      "B": "Gate",
+      "p_min": 0.1496,
+      "p_max": 0.1628
+    }
+  ]
+}

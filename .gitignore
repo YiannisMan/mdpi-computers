@@ -1,0 +1,86 @@
+# TechQA dataset & corpus (IBM license + size)
+TechQA/
+TechQA.tar
+TechQA.tar.gz
+*.txt.bz2
+full_technote_collection*
+*technotes*.json
+training_Q_A.json
+dev_Q_A.json
+
+# Models & weights
+models/
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+reranker_train_only/
+reranker_fold*/
+**/*adapter*/
+*.pkl
+
+# Vector DB / Ollama
+chroma*/
+chromadb*/
+*.sqlite3
+*.duckdb
+.ollama/
+ollama_models/
+
+# BM25 indexes (derived from IBM corpus - large + licensed)
+bm25_tokens*.jsonl
+bm25_index*.pkl
+bm25s_index/
+*.npy
+
+# Secrets / credentials
+.env
+.env.*
+*secret*
+*token*
+*credential*
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Caches / temp
+.cache/
+hf_cache/
+*.log
+*.tmp
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# PUBLIC repo - raw IBM TechQA text (regenerable; see DATA_AVAILABILITY.md)
+**/retrieval_test_docs.jsonl
+**/retrieval_test_docs_*.jsonl
+**/annotation/*.xlsx
+**/retrieval_train_oof.jsonl
+
+# third-party tool + service model dirs
+llama.cpp/
+reranker_model/
+reranker_model_leaky/
+
+# third-party tool + service model dirs
+llama.cpp/
+reranker_model/
+reranker_model_leaky/
+
+# IBM-derived SFT data + fold model dirs
+**/sft_dataset*.jsonl
+reranker_model*/

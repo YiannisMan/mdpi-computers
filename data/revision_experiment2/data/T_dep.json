@@ -1,0 +1,6 @@
+{
+  "T_dep": -0.5645286083221436,
+  "max_f_constraint_pct": 25.0,
+  "score": "max_rerank_logit_top5",
+  "source": "restored_from_exp2_report.json (OOF file lost; identical value used in frozen results)"
+}

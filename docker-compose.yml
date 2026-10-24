@@ -1,0 +1,79 @@
+version: '3.8'
+
+services:
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: chromadb
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./chroma_data:/data
+    restart: unless-stopped
+
+  api:
+    build: .
+    container_name: knowledge_api
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./app:/app
+      - ./data:/data
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+      - OLLAMA_MODEL=${EVAL_MODEL:-llama3:8b-instruct-q4_K_M}
+      - RAG_GATE_THRESHOLD=${EVAL_GATE:-}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - chromadb
+      - ollama
+    command: uvicorn main:app --host 0.0.0.0 --port 8080
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [ gpu ]
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    volumes:
+      - ollama_models:/root/.ollama
+    environment:
+      - OLLAMA_NUM_PARALLEL=1
+      - OLLAMA_KEEP_ALIVE=5m
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    restart: unless-stopped
+    
+  jira_worker:
+    build: .
+    depends_on:
+      - api
+    environment:
+      - JIRA_URL=${JIRA_URL}
+      - JIRA_EMAIL=${JIRA_EMAIL}
+      - JIRA_TOKEN=${JIRA_TOKEN}
+      - JIRA_PROJECT=${JIRA_PROJECT}
+      - JIRA_HUMAN_ACCOUNT_ID=${JIRA_HUMAN_ACCOUNT_ID}
+      - INTERNAL_ROLE=${INTERNAL_ROLE}
+      - REPORTER_IDS=${REPORTER_IDS}
+      - ASSIGNEE_ID=${ASSIGNEE_ID}
+      - PSEUDO_MODE=${PSEUDO_MODE}
+      - RESOLVE_URL=http://api:8080/resolve
+      - POLL_ONCE=0
+      - POLL_SECS=20
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
+    command: python /data/jira_worker.py
+
+volumes:
+  ollama_models:

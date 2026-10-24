@@ -1,0 +1,5 @@
+FROM llama3:8b-instruct-q4_K_M
+ADAPTER ./techqa-lora-f16.gguf
+PARAMETER num_ctx 8192
+PARAMETER temperature 0
+PARAMETER stop "<|eot_id|>"

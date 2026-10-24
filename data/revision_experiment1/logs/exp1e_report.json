@@ -1,0 +1,149 @@
+{
+  "experiment": "1E_StageC",
+  "generated_utc": "2026-10-20T16:22:14Z",
+  "test_set": {
+    "n_total": 310,
+    "present": 105,
+    "missA": 55,
+    "missU": 150
+  },
+  "integrity": {
+    "per_run": [
+      {
+        "run": 1,
+        "tickets": 310,
+        "unique_qids": 310,
+        "duplicates": 0,
+        "ids_match_frozen": "OK",
+        "pass": true
+      },
+      {
+        "run": 2,
+        "tickets": 310,
+        "unique_qids": 310,
+        "duplicates": 0,
+        "ids_match_frozen": "OK",
+        "pass": true
+      },
+      {
+        "run": 3,
+        "tickets": 310,
+        "unique_qids": 310,
+        "duplicates": 0,
+        "ids_match_frozen": "OK",
+        "pass": true
+      }
+    ],
+    "all_pass": true
+  },
+  "paired_BC": [
+    {
+      "run": 1,
+      "agreement": 0.981,
+      "kappa": 0.958,
+      "mcnemar_p": 0.219,
+      "b01": 1,
+      "b10": 5,
+      "n": 310
+    },
+    {
+      "run": 2,
+      "agreement": 0.977,
+      "kappa": 0.951,
+      "mcnemar_p": 1.0,
+      "b01": 3,
+      "b10": 4,
+      "n": 310
+    },
+    {
+      "run": 3,
+      "agreement": 0.981,
+      "kappa": 0.958,
+      "mcnemar_p": 0.688,
+      "b01": 2,
+      "b10": 4,
+      "n": 310
+    }
+  ],
+  "baseline_noise": [
+    {
+      "pair": "B1 vs B2",
+      "agreement": 0.99
+    },
+    {
+      "pair": "B1 vs B3",
+      "agreement": 0.99
+    },
+    {
+      "pair": "B2 vs B3",
+      "agreement": 0.981
+    }
+  ],
+  "stageC_by_subgroup": [
+    {
+      "subgroup": "present",
+      "n": 105,
+      "escalated_%": "21.0 (20.0-21.9)",
+      "auto_resolved_%": "79.0 (78.1-80.0)"
+    },
+    {
+      "subgroup": "missA",
+      "n": 55,
+      "escalated_%": "39.4 (38.2-40.0)",
+      "auto_resolved_%": "60.6 (60.0-61.8)"
+    },
+    {
+      "subgroup": "missU",
+      "n": 150,
+      "escalated_%": "45.1 (44.7-45.3)",
+      "auto_resolved_%": "54.9 (54.7-55.3)"
+    },
+    {
+      "subgroup": "missing",
+      "n": 205,
+      "escalated_%": "43.6 (43.4-43.9)",
+      "auto_resolved_%": "56.4 (56.1-56.6)"
+    },
+    {
+      "subgroup": "all",
+      "n": 310,
+      "escalated_%": "35.9 (35.5-36.5)",
+      "auto_resolved_%": "64.1 (63.5-64.5)"
+    }
+  ],
+  "stageC_wilson_majority": [
+    {
+      "subgroup": "present",
+      "escalated_pct_majority": 21.0,
+      "ci_lo": 14.3,
+      "ci_hi": 29.7,
+      "k": 22,
+      "n": 105
+    },
+    {
+      "subgroup": "missA",
+      "escalated_pct_majority": 38.2,
+      "ci_lo": 26.5,
+      "ci_hi": 51.4,
+      "k": 21,
+      "n": 55
+    },
+    {
+      "subgroup": "missU",
+      "escalated_pct_majority": 45.3,
+      "ci_lo": 37.6,
+      "ci_hi": 53.3,
+      "k": 68,
+      "n": 150
+    },
+    {
+      "subgroup": "missing",
+      "escalated_pct_majority": 43.4,
+      "ci_lo": 36.8,
+      "ci_hi": 50.3,
+      "k": 89,
+      "n": 205
+    }
+  ],
+  "R1_M4_missU_auto_resolved": "54.9 (54.7-55.3)"
+}

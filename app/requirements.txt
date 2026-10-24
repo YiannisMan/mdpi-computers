@@ -1,0 +1,8 @@
+fastapi>=0.100.0
+uvicorn[standard]>=0.27.0
+requests>=2.31
+chromadb
+sentence-transformers
+rank-bm25
+bm25s
+ollama

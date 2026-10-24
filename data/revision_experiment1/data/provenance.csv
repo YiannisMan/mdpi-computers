@@ -1,0 +1,11 @@
+set,source_file,n,in_train,in_dev,answerable,unanswerable,use,intersection_with_TEST
+sft_all,training_Q_A.json,450,450,0,450,0,SFT all examples (TRAIN only),0
+sft_train,training_Q_A.json,405,405,0,405,0,SFT train split (90%),0
+sft_val,training_Q_A.json,45,45,0,45,0,SFT validation split (10%),0
+reranker_train,training_Q_A.json + dev_Q_A.json,608,450,158,608,0,Reranker training (pair-level 90% split over train+dev),158
+reranker_val,training_Q_A.json + dev_Q_A.json,249,182,67,249,0,Reranker validation (pair-level 10% split over train+dev),67
+stageA,dev_Q_A.json,160,0,160,160,0,Stage A retrieval eval,160
+stageB,dev_Q_A.json,160,0,160,160,0,Stage B generation eval,160
+stageC_ans,dev_Q_A.json,160,0,160,160,0,Stage C (answerable),160
+stageC_unans,dev_Q_A.json,40,0,40,0,40,Stage C (unanswerable),40
+subset30,dev_Q_A.json,30,0,30,30,0,30-query engineering subset,30

@@ -1,0 +1,264 @@
+{
+  "metric1_semantic_support": [
+    {
+      "config": "Base",
+      "subpop": "present",
+      "citation_validity": "88.2 (87.9-88.9)",
+      "step_support": "70.8 (70.1-71.9)",
+      "fully_supported": "53.2 (52.5-53.5)",
+      "semantic_mismatch_cv": "39.7 (39.1-40.2)",
+      "wrong_citation_share": "75.2 (74.7-75.5)"
+    },
+    {
+      "config": "Base",
+      "subpop": "missA",
+      "citation_validity": "88.8 (88.2-90.0)",
+      "step_support": "74.3 (72.6-76.5)",
+      "fully_supported": "61.9 (58.8-64.0)",
+      "semantic_mismatch_cv": "30.4 (28.9-33.3)",
+      "wrong_citation_share": "80.1 (78.9-82.2)"
+    },
+    {
+      "config": "Base",
+      "subpop": "missU",
+      "citation_validity": "78.3 (77.4-78.8)",
+      "step_support": "52.5 (52.1-52.8)",
+      "fully_supported": "39.7 (38.7-40.1)",
+      "semantic_mismatch_cv": "49.4 (49.1-50.0)",
+      "wrong_citation_share": "82.2 (81.7-82.5)"
+    },
+    {
+      "config": "Base",
+      "subpop": "total",
+      "citation_validity": "83.6 (82.9-84.3)",
+      "step_support": "62.5 (61.8-63.4)",
+      "fully_supported": "48.3 (47.4-49.0)",
+      "semantic_mismatch_cv": "42.3 (41.9-42.9)",
+      "wrong_citation_share": "80.1 (79.6-80.5)"
+    },
+    {
+      "config": "QLoRA",
+      "subpop": "present",
+      "citation_validity": "88.0 (88.0-88.0)",
+      "step_support": "80.9 (80.8-80.9)",
+      "fully_supported": "68.7 (68.7-68.7)",
+      "semantic_mismatch_cv": "21.9 (21.9-21.9)",
+      "wrong_citation_share": "76.2 (76.2-76.2)"
+    },
+    {
+      "config": "QLoRA",
+      "subpop": "missA",
+      "citation_validity": "90.1 (88.2-91.2)",
+      "step_support": "76.7 (75.0-78.6)",
+      "fully_supported": "71.3 (70.6-72.7)",
+      "semantic_mismatch_cv": "20.9 (20.0-22.6)",
+      "wrong_citation_share": "82.5 (81.0-84.0)"
+    },
+    {
+      "config": "QLoRA",
+      "subpop": "missU",
+      "citation_validity": "89.3 (89.3-89.4)",
+      "step_support": "71.3 (70.7-71.7)",
+      "fully_supported": "60.5 (59.5-61.2)",
+      "semantic_mismatch_cv": "32.3 (31.6-33.3)",
+      "wrong_citation_share": "90.4 (88.7-91.3)"
+    },
+    {
+      "config": "QLoRA",
+      "subpop": "total",
+      "citation_validity": "88.9 (88.6-89.1)",
+      "step_support": "76.0 (75.4-76.4)",
+      "fully_supported": "65.7 (65.2-66.0)",
+      "semantic_mismatch_cv": "26.1 (25.8-26.4)",
+      "wrong_citation_share": "84.7 (84.1-85.1)"
+    },
+    {
+      "config": "StageC",
+      "subpop": "present",
+      "citation_validity": "100.0 (100.0-100.0)",
+      "step_support": "89.6 (89.4-90.0)",
+      "fully_supported": "77.5 (76.8-78.6)",
+      "semantic_mismatch_cv": "22.5 (21.4-23.2)",
+      "wrong_citation_share": "57.4 (56.5-59.1)"
+    },
+    {
+      "config": "StageC",
+      "subpop": "missA",
+      "citation_validity": "100.0 (100.0-100.0)",
+      "step_support": "92.0 (91.9-92.2)",
+      "fully_supported": "85.0 (84.8-85.3)",
+      "semantic_mismatch_cv": "15.0 (14.7-15.2)",
+      "wrong_citation_share": "50.0 (50.0-50.0)"
+    },
+    {
+      "config": "StageC",
+      "subpop": "missU",
+      "citation_validity": "100.0 (100.0-100.0)",
+      "step_support": "90.4 (89.8-90.7)",
+      "fully_supported": "76.5 (75.6-77.1)",
+      "semantic_mismatch_cv": "23.5 (22.9-24.4)",
+      "wrong_citation_share": "70.7 (66.7-72.7)"
+    },
+    {
+      "config": "StageC",
+      "subpop": "total",
+      "citation_validity": "100.0 (100.0-100.0)",
+      "step_support": "90.4 (90.3-90.5)",
+      "fully_supported": "78.4 (78.2-78.5)",
+      "semantic_mismatch_cv": "21.6 (21.5-21.8)",
+      "wrong_citation_share": "61.9 (61.1-62.3)"
+    },
+    {
+      "config": "Gate",
+      "subpop": "present",
+      "citation_validity": "85.6 (85.1-86.5)",
+      "step_support": "69.3 (68.3-70.7)",
+      "fully_supported": "50.9 (50.0-51.4)",
+      "semantic_mismatch_cv": "40.5 (39.7-41.3)",
+      "wrong_citation_share": "79.0 (78.7-79.3)"
+    },
+    {
+      "config": "Gate",
+      "subpop": "missA",
+      "citation_validity": "90.3 (87.5-91.7)",
+      "step_support": "76.5 (74.0-77.9)",
+      "fully_supported": "65.3 (62.5-66.7)",
+      "semantic_mismatch_cv": "27.7 (27.3-28.6)",
+      "wrong_citation_share": "94.4 (94.1-95.0)"
+    },
+    {
+      "config": "Gate",
+      "subpop": "missU",
+      "citation_validity": "71.8 (71.8-71.8)",
+      "step_support": "55.4 (55.1-55.6)",
+      "fully_supported": "36.6 (36.6-36.6)",
+      "semantic_mismatch_cv": "49.0 (49.0-49.0)",
+      "wrong_citation_share": "83.3 (83.2-83.5)"
+    },
+    {
+      "config": "Gate",
+      "subpop": "total",
+      "citation_validity": "80.5 (79.9-81.1)",
+      "step_support": "64.4 (63.6-65.3)",
+      "fully_supported": "46.9 (46.7-47.3)",
+      "semantic_mismatch_cv": "41.7 (41.5-41.9)",
+      "wrong_citation_share": "82.6 (82.4-82.9)"
+    },
+    {
+      "config": "Gate_T5",
+      "subpop": "present",
+      "citation_validity": "100.0 (100.0-100.0)",
+      "step_support": "100.0 (100.0-100.0)",
+      "fully_supported": "100.0 (100.0-100.0)",
+      "semantic_mismatch_cv": "0.0 (0.0-0.0)",
+      "wrong_citation_share": "n/a"
+    },
+    {
+      "config": "Gate_T5",
+      "subpop": "missA",
+      "citation_validity": "n/a",
+      "step_support": "n/a",
+      "fully_supported": "n/a",
+      "semantic_mismatch_cv": "n/a",
+      "wrong_citation_share": "n/a"
+    },
+    {
+      "config": "Gate_T5",
+      "subpop": "missU",
+      "citation_validity": "100.0 (100.0-100.0)",
+      "step_support": "66.7 (66.7-66.7)",
+      "fully_supported": "0.0 (0.0-0.0)",
+      "semantic_mismatch_cv": "100.0 (100.0-100.0)",
+      "wrong_citation_share": "0.0 (0.0-0.0)"
+    },
+    {
+      "config": "Gate_T5",
+      "subpop": "total",
+      "citation_validity": "100.0 (100.0-100.0)",
+      "step_support": "94.7 (94.7-94.7)",
+      "fully_supported": "80.0 (80.0-80.0)",
+      "semantic_mismatch_cv": "20.0 (20.0-20.0)",
+      "wrong_citation_share": "0.0 (0.0-0.0)"
+    }
+  ],
+  "paired_QLoRA_vs_Base_fully_supported": {
+    "n_common": 195,
+    "QLoRA_fully_pct": 65.6,
+    "Base_fully_pct": 47.7,
+    "delta_pp": 17.95,
+    "mcnemar_p": 0.00010259635179423315,
+    "b01": 57,
+    "b10": 22
+  },
+  "R3_semantic_mismatch_among_citation_valid": {
+    "Base": "42.3 (41.9-42.9)",
+    "QLoRA": "26.1 (25.8-26.4)",
+    "StageC": "21.6 (21.5-21.8)",
+    "Gate": "41.7 (41.5-41.9)",
+    "Gate_T5": "20.0 (20.0-20.0)"
+  },
+  "human": {
+    "inter_annotator": {
+      "n_items": 50,
+      "correctness_kappa_3class": 0.938,
+      "correctness_kappa_CvsNot": 0.901,
+      "step_support_kappa": 0.959,
+      "step_support_agreement": 0.993
+    },
+    "nli_validation": {
+      "n_steps": 144,
+      "accuracy": 0.889,
+      "kappa": 0.324,
+      "recall_unsupported": 0.357
+    },
+    "correct_resolution": {
+      "N_by_stratum": {
+        "missing": 115,
+        "present": 82
+      },
+      "correct_among_auto_pct": 22.3,
+      "ci_auto": [
+        13.3,
+        32.0
+      ],
+      "correct_resolution_all_pct": 14.2,
+      "ci_all": [
+        8.5,
+        20.3
+      ],
+      "p_by_stratum": {
+        "missing": 4.0,
+        "present": 48.0
+      },
+      "wilson_by_stratum": {
+        "missing": [
+          4.0,
+          0.7,
+          19.5,
+          "1/25"
+        ],
+        "present": [
+          48.0,
+          30.0,
+          66.5,
+          "12/25"
+        ]
+      },
+      "unsafe_auto_missing_pct": 76.0
+    },
+    "risky_action": {
+      "missing": [
+        24.0,
+        11.5,
+        43.4,
+        "6/25"
+      ],
+      "present": [
+        8.0,
+        2.2,
+        25.0,
+        "2/25"
+      ]
+    }
+  }
+}

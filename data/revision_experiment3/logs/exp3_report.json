@@ -1,0 +1,229 @@
+{
+  "experiment": "3_Baselines",
+  "thresholds": {
+    "criterion": "max C-Abst s.t. F-Abst <= 25.0% (TRAIN out-of-fold)",
+    "n_present": 255,
+    "n_missing": 345,
+    "gate": {
+      "T_dep": -0.5645286083221435,
+      "C_abst_train": 58.26,
+      "F_abst_train": 24.71,
+      "auroc": 0.7324,
+      "auroc_ci": [
+        0.6897,
+        0.772
+      ],
+      "T5_on_train_curve": {
+        "C_abst": 99.71,
+        "F_abst": 93.33
+      }
+    },
+    "B1_clf": {
+      "p_star": 0.41833897786218693,
+      "C": 3.0,
+      "C_abst_train": 63.77,
+      "F_abst_train": 24.31,
+      "auroc_oof": 0.7501,
+      "auroc_ci": [
+        0.708,
+        0.7889
+      ],
+      "features": [
+        "max_logit",
+        "logit2",
+        "mean_logit",
+        "gap12",
+        "softmax_entropy",
+        "q_len",
+        "n_tech_tokens"
+      ]
+    },
+    "B2_crag": {
+      "theta_lo": -0.0068207294680178165,
+      "theta_hi": -0.0006989181856624782,
+      "C_abst_train": 54.78,
+      "F_abst_train": 24.31,
+      "auroc": 0.711,
+      "auroc_ci": [
+        0.672,
+        0.7494
+      ]
+    }
+  },
+  "target_F_abst_QLoRA": 21.0,
+  "iso_fabst": [
+    {
+      "method": "Gate (reranker logit)",
+      "T_star": -1.4382,
+      "F_abst": 21.0,
+      "C_abst": 31.2,
+      "C_abst_CI": "[16.7, 57.2]",
+      "QLoRA_C_abst": 42.4,
+      "QLoRA_minus_method_pp": 11.2
+    },
+    {
+      "method": "B1 answerability clf",
+      "T_star": 0.3574,
+      "F_abst": 21.0,
+      "C_abst": 45.4,
+      "C_abst_CI": "[15.8, 67.7]",
+      "QLoRA_C_abst": 42.4,
+      "QLoRA_minus_method_pp": -2.9
+    },
+    {
+      "method": "B2 CRAG (monoT5)",
+      "T_star": -0.0351,
+      "F_abst": 9.5,
+      "C_abst": 22.9,
+      "C_abst_CI": "[17.6, 43.7]",
+      "QLoRA_C_abst": 42.4,
+      "QLoRA_minus_method_pp": 19.5
+    }
+  ],
+  "auroc": [
+    {
+      "score": "Gate (reranker logit)",
+      "AUROC": 0.663,
+      "CI": "[0.593, 0.724]"
+    },
+    {
+      "score": "B1 answerability clf",
+      "AUROC": 0.717,
+      "CI": "[0.647, 0.777]"
+    },
+    {
+      "score": "B2 CRAG (monoT5)",
+      "AUROC": 0.642,
+      "CI": "[0.576, 0.703]"
+    }
+  ],
+  "table4_supplement": [
+    {
+      "config": "B1_clf",
+      "n_runs": 3,
+      "C_Abst_missing": "60.0 (60.0-60.0)",
+      "C_Abst_missA": "58.2 (58.2-58.2)",
+      "C_Abst_missU": "60.7 (60.7-60.7)",
+      "F_Abst_present": "24.8 (24.8-24.8)",
+      "Hazard_missing": "40.0 (40.0-40.0)"
+    },
+    {
+      "config": "B2_crag",
+      "n_runs": 3,
+      "C_Abst_missing": "53.2 (53.2-53.2)",
+      "C_Abst_missA": "58.2 (58.2-58.2)",
+      "C_Abst_missU": "51.3 (51.3-51.3)",
+      "F_Abst_present": "27.6 (27.6-27.6)",
+      "Hazard_missing": "46.8 (46.8-46.8)"
+    },
+    {
+      "config": "Base",
+      "n_runs": 3,
+      "C_Abst_missing": "8.5 (8.3-8.8)",
+      "C_Abst_missA": "7.9 (7.3-9.1)",
+      "C_Abst_missU": "8.7 (8.7-8.7)",
+      "F_Abst_present": "5.7 (5.7-5.7)",
+      "Hazard_missing": "91.5 (91.2-91.7)"
+    },
+    {
+      "config": "Gate",
+      "n_runs": 3,
+      "C_Abst_missing": "53.7 (53.7-53.7)",
+      "C_Abst_missA": "56.4 (56.4-56.4)",
+      "C_Abst_missU": "52.7 (52.7-52.7)",
+      "F_Abst_present": "29.5 (29.5-29.5)",
+      "Hazard_missing": "46.3 (46.3-46.3)"
+    },
+    {
+      "config": "Gate_T5",
+      "n_runs": 3,
+      "C_Abst_missing": "99.5 (99.5-99.5)",
+      "C_Abst_missA": "100.0 (100.0-100.0)",
+      "C_Abst_missU": "99.3 (99.3-99.3)",
+      "F_Abst_present": "96.2 (96.2-96.2)",
+      "Hazard_missing": "0.5 (0.5-0.5)"
+    },
+    {
+      "config": "Gate∘QLoRA",
+      "n_runs": 3,
+      "C_Abst_missing": "67.2 (66.8-67.3)",
+      "C_Abst_missA": "70.9 (70.9-70.9)",
+      "C_Abst_missU": "65.8 (65.3-66.0)",
+      "F_Abst_present": "40.3 (40.0-41.0)",
+      "Hazard_missing": "32.8 (32.7-33.2)"
+    },
+    {
+      "config": "QLoRA",
+      "n_runs": 3,
+      "C_Abst_missing": "42.4 (42.0-42.9)",
+      "C_Abst_missA": "38.8 (38.2-40.0)",
+      "C_Abst_missU": "43.8 (43.3-44.0)",
+      "F_Abst_present": "21.0 (21.0-21.0)",
+      "Hazard_missing": "57.6 (57.1-58.0)"
+    }
+  ],
+  "pairwise_secondary": [
+    {
+      "A": "QLoRA",
+      "B": "B1_clf",
+      "population": "missing",
+      "metric": "C-Abst",
+      "delta_pp": -17.56,
+      "boot_lo": -26.02,
+      "boot_hi": -9.27,
+      "mcnemar_p": 0.0001303794299119954,
+      "b01": 25,
+      "b10": 61,
+      "holm_p": 0.0002607588598239908
+    },
+    {
+      "A": "QLoRA",
+      "B": "B2_crag",
+      "population": "missing",
+      "metric": "C-Abst",
+      "delta_pp": -10.73,
+      "boot_lo": -20.0,
+      "boot_hi": -1.63,
+      "mcnemar_p": 0.02630166513112228,
+      "b01": 34,
+      "b10": 56,
+      "holm_p": 0.02630166513112228
+    },
+    {
+      "A": "QLoRA",
+      "B": "B1_clf",
+      "population": "present",
+      "metric": "F-Abst",
+      "delta_pp": -3.81,
+      "boot_lo": -13.65,
+      "boot_hi": 6.35,
+      "mcnemar_p": 0.584664711728692,
+      "b01": 13,
+      "b10": 17,
+      "holm_p": 0.592412737198174
+    },
+    {
+      "A": "QLoRA",
+      "B": "B2_crag",
+      "population": "present",
+      "metric": "F-Abst",
+      "delta_pp": -6.67,
+      "boot_lo": -17.78,
+      "boot_hi": 3.81,
+      "mcnemar_p": 0.296206368599087,
+      "b01": 13,
+      "b10": 20,
+      "holm_p": 0.592412737198174
+    }
+  ],
+  "configs": [
+    "Base",
+    "QLoRA",
+    "Gate",
+    "Gate_T5",
+    "B1_clf",
+    "B2_crag",
+    "Gate∘QLoRA"
+  ],
+  "crag_available": true
+}
