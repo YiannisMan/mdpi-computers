@@ -35,7 +35,7 @@ sweep - no randomness, no TEST.
 
 | File | Contents |
 |---|---|
-| `logs/exp2_report.md` / `.json` | human + machine summary (Table 4, Wilson CIs, pairwise, sensitivity, `T_dep`) |
+| `logs/exp2_report.json` | human + machine summary (Table 4, Wilson CIs, pairwise, sensitivity, `T_dep`) |
 | `analysis/tables/exp2_table4.csv` | C-Abst (missing / missA / missU), Hazard, F-Abst, citation, ROUGE-L - mean (min–max) |
 | `analysis/tables/exp2_table4_wilson.csv` | Wilson 95 % CI on the majority vote, per config × subpopulation |
 | `analysis/tables/exp2_pairwise_main.csv` | 3 pairs × 2 metrics: Δpp, bootstrap CI, McNemar p, Holm-corrected p, verdict |
