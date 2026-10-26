@@ -35,7 +35,7 @@ python exp3b_report.py           # iso-F-Abst comparison + AUROC + figure
 
 | File | Contents |
 |---|---|
-| `logs/exp3_report.md` / `.json` | summary: iso-F-Abst table, AUROC, pairwise secondary comparisons |
+| `logs/exp3_report.json` | summary: iso-F-Abst table, AUROC, pairwise secondary comparisons |
 | `data/thresholds.json` | TRAIN-selected operating thresholds for B1 / B2 |
 | `analysis/tables/exp3_iso_fabst.csv` | all methods compared at a matched F-Abst |
 | `analysis/tables/exp3_auroc.csv` | ranking quality (AUROC) of the abstention scores |
