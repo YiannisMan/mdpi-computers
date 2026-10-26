@@ -41,7 +41,7 @@ python exp4_report.py            # Metric 1 + Metric 2 tables, kappa, bootstrap
 
 | File | Contents |
 |---|---|
-| `logs/exp4_report.md` / `.json` | Metric 1 + Metric 2, citation validity, κappa, NLI-validation block |
+| `logs/exp4_report.json` | Metric 1 + Metric 2, citation validity, κappa, NLI-validation block |
 | `analysis/steps_nli.jsonl` | per-step NLI scores (model-generated step text + `p_cited` / `p_any`) |
 | `analysis/tables/exp4_semantic_support.csv` | semantic-support and citation-validity rates per config |
 | `annotation/annotator1.xlsx`, `annotator2.xlsx`, `adjudicated.xlsx`, `calibration.xlsx` | human labels (excluded from the public repo - raw TechQA text) |
