@@ -28,9 +28,7 @@ The GPU stages are archived as frozen outputs (see `DATA_AVAILABILITY.md`).
 Windows + WSL2 + Docker (service container `knowledge_api`), Ollama, NVIDIA RTX 3060.
 
 ## Citation
-> (Trustworthy Agentic AI for Autonomous IT Incident Resolution: 
-A Retrieval-Augmented LLM with Learned Abstention and 
-Human Escalation / computers-4639708)
+> (Escalation-Aware Agentic RAG for First-Line IT Incident Triage: Learned Abstention, Semantic Grounding Analysis and Human Escalation / [computers-15110802](https://www.mdpi.com/2073-431X/15/11/802))
 
 ---
 
@@ -67,6 +65,4 @@ logs. Τα στάδια GPU είναι αρχειοθετημένα ως παγ�
 Windows + WSL2 + Docker (container υπηρεσίας `knowledge_api`), Ollama, NVIDIA RTX 3060.
 
 ## Παραπομπή
-> (Trustworthy Agentic AI for Autonomous IT Incident Resolution: 
-A Retrieval-Augmented LLM with Learned Abstention and 
-Human Escalation / computers-4639708)
+> (Escalation-Aware Agentic RAG for First-Line IT Incident Triage: Learned Abstention, Semantic Grounding Analysis and Human Escalation / [computers-15110802](https://www.mdpi.com/2073-431X/15/11/802))
